@@ -55,8 +55,7 @@ WEBHOOK_DATA='{
       },
       {
         "name": "Message",
-        "value": "'"$MESSAGE"'",
-        "inline": true
+        "value": "'"$MESSAGE"'"
       }
     ],
     "timestamp": "'"$TIMESTAMP"'"
