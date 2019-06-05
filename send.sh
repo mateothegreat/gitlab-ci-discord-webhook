@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 STATUS=$1
-MESSAGE=$2
+MESSAGE=$3
 case $STATUS in
     "success" )
     EMBED_COLOR="3066993"
