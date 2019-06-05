@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 STATUS=$1
-
+MESSAGE=$2
 case $STATUS in
     "success" )
     EMBED_COLOR="3066993"
@@ -51,6 +51,11 @@ WEBHOOK_DATA='{
       {
         "name": "Branch",
         "value": "'"[\`$CI_COMMIT_REF_NAME\`]($CI_PROJECT_URL/tree/$CI_COMMIT_REF_SLUG)"'",
+        "inline": true
+      },
+      {
+        "name": "Message",
+        "value": "'"$MESSAGE"'",
         "inline": true
       }
     ],
